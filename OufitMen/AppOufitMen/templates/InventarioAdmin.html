@@ -1,0 +1,260 @@
+{% load static %}  
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'js/Crud-Productos.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/InventarioAdmin.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Header.css'%}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/3d7a846b01.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- tu_template.html -->
+
+{% for producto in productos %}
+<img src="{{ producto.prod_Imagen.url }}" alt="{{ producto.prod_Nombre }}">
+{% endfor %}
+
+
+
+
+
+    <div class="header">
+        <!-- Header principal y logo -->
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img  src="{% static 'img/logoBlanco.png' %}" alt="Logo" class="header-logo">
+            </a>
+            <ul class="navbar-brand">
+                <li><a href="/VistasAdministrador/index.html">Inventario-Articulos</a></li>
+                <li><a href="/VistasUsuario/index3.html">Cerrar Sesion</a></li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+
+<section class="cont">
+
+  <div class="cabezera">
+      <h1>Administrador</h1>
+  </div>
+  
+  <div class="contenedor1">
+      <button class="btnInsertar">Agregar Articulo</button>
+      <label for=""><input type="text" id="id_equipoo" name="id_equipoo" placeholder="Articulo"></label>
+      <button type="button" id="BuscarArticulo" class="btn btn-danger w-100 fs-5 mb-3">Buscar</button>
+  </div>
+  
+  
+  <div class="contador1">
+    <div class="icon-container">
+      <i class="fas fa-linkedin"></i>
+      <h1 class="cantidad">Articulos Urbanos: 4 </h1>
+  </div>
+  </div>
+
+  <div class="contador2">
+      <div class="icon-container">
+          <i class="fas fa-laptop"></i>
+          <h1 class="cantidad">Articulos Formales: 5</h1>
+      </div>
+  </div>
+  
+
+  <div class="contador3">
+    <div class="icon-container">
+        <i class="fas fa-linkedin"></i>
+        <h1 class="cantidad">Articulos Casuales: 5</h1>
+    </div>
+</div>
+  
+
+  <div class="contenedor3">    
+      <div>
+          <table id="tabla1">
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>Nombre</th>
+                      <th>Descripcion</th>
+                      <th>Precio</th>
+                      <th>Talla</th>
+                      <th>Color</th>
+                      <th>Imagen Producto</th>
+                      <th>Funciones</th>
+                  </tr>
+                </thead>
+                  <tbody id="tabla1-body">
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                        Consultar();
+                        });
+                    </script>
+                </tbody>
+          </table>
+      </div>
+  </div>
+
+  <!--modal1-->
+  <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Actualizar articulo</h2>
+          <form id="updateForm">
+              <!-- Campos para actualizar los datos -->
+              <div class="mb-3">
+                  <input type="text" class="form-id" id="id" name="id" placeholder="id">
+              </div>
+              <div class="mb-3">
+                  <input type="number" id="precio" name="precio" placeholder="precio">
+              </div>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="tipo" name="tipo" placeholder="tipo">
+              </div>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="color" name="color" placeholder="Color">
+              </div>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="numero_identificacion" name="numero_identificacion" placeholder="Numero Identificacion">
+              </div>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="cantidad">
+              </div>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="ImagenProducto" name="ImagenProducto" placeholder="ImagenProducto">
+              </div>
+              <div class="mb-3">
+                  <button type="button" id="ActualizarArticulo" class="btn btn-primary w-100 fs-5 mb-3">Actualizar Articulo</button>
+              </div>
+          </form>
+      </div>
+  </div>
+  <!-- ... -->
+
+
+  <!--modal2-->
+  <div id="myModal2" class="modal">
+      <div class="modal-content">
+          <span class="close2">&times;</span>
+          <h2>Agregar</h2>
+            <!--Formulario para insertar prendas-->
+          
+            <form method="post" id="FormProductos" enctype="multipart/form-data">
+                {% csrf_token %}
+            <!--<div class="mb-3">
+                <input type="number" class="form-prod_Id" id="prod_Id" name="prod_Id" placeholder="Id Producto">
+              </div>-->
+
+              <div class="mb-3">
+                <input type="text" class="form-prod_Nombre" id="prod_Nombre" name="prod_Nombre" placeholder="Nombre Prenda">
+            </div>
+              
+              <div class="mb-3">
+                  <input type="text" class="form-prod_Descripcion" id="prod_Descripcion" name="prod_Descripcion" placeholder="Descripcion del producto">
+              </div>
+
+              <div class="mb-3">
+                <input type="number" class="form-prod_Precio" id="prod_Precio" name="prod_Precio" placeholder="precio">
+              </div>
+
+              <div class="mb-3">
+                <input type="text" class="form-prod_Talla" id="prod_Talla" name="prod_Talla" placeholder="talla">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-prod_Color" id="prod_Color" name="prod_Color" placeholder="color">
+              </div>
+              <div class="mb-3">
+                <input type="file" class="form-prod_Imagen" id="prod_Imagen" name="prod_Imagen" placeholder="Imagen Producto">
+
+              </div>
+              <div class="mb-3">
+                  <button type="submit" id="Guardar" class="Guardar" value="Guardar">Insertar Articulo</button>
+              </div>
+          </form>
+      </div>
+  </div>
+  <!---->
+  
+  
+
+
+ 
+
+  
+  
+
+
+ 
+
+  
+
+
+  
+  
+</section>
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-logo">
+    
+  </div>
+  <ul class="footer-links">
+      <li><a href="#">inicio</a></li>
+      <li><a href="#">Ayuda</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contactos</a></li>
+  </ul>
+  <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+     <p>&copy; 2023 Juan Gonzalez - &copy;2023 Jorge Sepulveda - &copy;2023 Carlos Camacho</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
