@@ -4,6 +4,7 @@ from django.contrib.auth.forms import *
 from django import forms
 from .models import Producto
 
+#Formulario para insertar producto
 
 class ProductoForm(forms.ModelForm):
     class Meta:

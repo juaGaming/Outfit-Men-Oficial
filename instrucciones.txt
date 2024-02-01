@@ -1,0 +1,94 @@
+---------------------------------------PASO 1------------------------------
+para empezar a trabajar sobre el proyecto debemos acceder hasta la carpeta raiz del proyecto
+en este caso OufitMen
+---------------------------------------PASO 2------------------------------
+ya una vez en el proyecto podemos iniciar el entorno virtual con el siguiente comando para este caso
+.\python12\Scripts\activate
+---------------------------------------PASO 3------------------------------
+cuando el entorno virtual este activo podemos ejecutar el servidor con el comando 
+python manage.py runserver
+---------------------------------------PASO 4------------------------------
+recordemos que cada que hacemos una modificacion en los settings o Models debemos ejecutar el comando
+    python manage.py makemigrations 
+seguido de ese el comando
+    python manage.py migrate
+---------------------------------------PASO 5------------------------------
+una vez ejecutado los dos comandos podemos correr el servidor nuevamente como en el paso 3
+
+
+
+----------------------CREAR METODOS O LOGICAS PARA EL FUNCIONAMIENTO DEL PROYECTO-----------------------------
+
+
+---------------------------------------PASO 1 Views------------------------------
+como primer paso debemos desarrollar la logica en el archivo views o viewsUsuario 
+depende el nombre de nuestro archivo
+---------------------------------------PASO 2 urls------------------------------
+una vez tengamos la logica del metodo lo tenemos que llamar en el archivo urls
+de la siguiente manera 
+
+from . views import*
+
+si tenemos un archivo que se llama viewsUsuario y queremos llamar metodos de ahi se haria de la siguiente manera
+
+from . viewsUsuario import*
+
+y asi para cada una de las tablas "models"
+---------------------------------------PASO 3 Ruta en urls------------------------------
+
+para llamar los metodos debemos tener una ruta principal la cual en este caso es
+
+path('InventarioAdmin',views.InventarioAdmin,name="VistaInventarioAdmin"),
+
+con la anterior ruta estamos ejecutando todo el Template de admin que en este caso seria todo sobre productos
+
+para poner la logica de InsertarProducto en  este template utilizamos la siguiente ruta
+    path('InsertarPrendas/',InsertarProducto.as_view(),name='InsertarPrendas'),
+
+teniendo en cuenta que para que nos funcione debemos tener un formulario en el html y una funcion ajax en javascript
+
+---------------------------------------PASO 4 funciones js-ajax-------------------------------
+
+una vez configuradas las urls creamos una funcion para cada logica la cual se encargara
+de mover los datos datos de el 
+back End = LOGICA  
+
+al
+
+Frond End = INTERFAZ
+
+---------------------------------------PASO 5 formularios del archivo Form -------------------------------
+
+ya cuando se tenga la funcion para cada metodo
+
+creamos formularios en el archivo form pero eso solo sera para insertar datos
+
+para el resto de las logicas no es necesario
+
+---------------------------------------PASO 6  HTML-TEMPLATES-------------------------------
+ya cuando se tienen las funciones de javascript debemos poner en el html
+lo necesario para que el metodo funcione es decir:
+
+si hacemos una logica para insertar un producto o un usuario 
+debemos crear un formulario que haga la entrada de esos datos
+con un boton que haga el envio 
+
+el formulario debe tener los mismos ID que tiene la funcion de javascript para que funcione correctamente
+
+si hacemos un metodo para buscar algo seria un input para poner lo que deseamos buscar 
+y un boton para que al momento de darle buscar nos traiga lo que deseamos
+
+si es actualizar un formulario que nos cargue los datos que ya insertamos y nos deje modificar los campos con
+lo nuevo
+
+si es solo listar = ver podriamos poner un boton que al darle cargar nos muestre todos los datos 
+o simplemente cada que entremos a la vista nos cargue los datos automaticamente
+
+---------------------------------------PASO 7 RUNSERVER -------------------------------
+
+como ultimo paso si todo esta correctamente sin errores podemos correr el servidor con el comando
+python manage.py runserver
+
+una vez ejecutado empezamos a probar los metodos y a ver si funcionan o nos dan errores
+
+

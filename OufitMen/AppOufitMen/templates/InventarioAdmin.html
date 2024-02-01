@@ -17,11 +17,6 @@
 
     <!-- tu_template.html -->
 
-{% for producto in productos %}
-<img src="{{ producto.prod_Imagen.url }}" alt="{{ producto.prod_Nombre }}">
-{% endfor %}
-
-
 
 
 
@@ -50,7 +45,7 @@
   
   <div class="contenedor1">
       <button class="btnInsertar">Agregar Articulo</button>
-      <label for=""><input type="text" id="id_equipoo" name="id_equipoo" placeholder="Articulo"></label>
+      <label for=""><input type="text" id="prod_Id" name="prod_Id" placeholder="Articulo"></label>
       <button type="button" id="BuscarArticulo" class="btn btn-danger w-100 fs-5 mb-3">Buscar</button>
   </div>
   
@@ -103,50 +98,37 @@
           </table>
       </div>
   </div>
-
+ <!--Actualizar prendas-->
   <!--modal1-->
   <div id="myModal" class="modal">
-      <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Actualizar articulo</h2>
-          <form id="updateForm">
-              <!-- Campos para actualizar los datos -->
-              <div class="mb-3">
-                  <input type="text" class="form-id" id="id" name="id" placeholder="id">
-              </div>
-              <div class="mb-3">
-                  <input type="number" id="precio" name="precio" placeholder="precio">
-              </div>
-              <div class="mb-3">
-                  <input type="text" class="form-control" id="tipo" name="tipo" placeholder="tipo">
-              </div>
-              <div class="mb-3">
-                  <input type="text" class="form-control" id="color" name="color" placeholder="Color">
-              </div>
-              <div class="mb-3">
-                  <input type="text" class="form-control" id="numero_identificacion" name="numero_identificacion" placeholder="Numero Identificacion">
-              </div>
-              <div class="mb-3">
-                  <input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="cantidad">
-              </div>
-              <div class="mb-3">
-                  <input type="text" class="form-control" id="ImagenProducto" name="ImagenProducto" placeholder="ImagenProducto">
-              </div>
-              <div class="mb-3">
-                  <button type="button" id="ActualizarArticulo" class="btn btn-primary w-100 fs-5 mb-3">Actualizar Articulo</button>
-              </div>
-          </form>
-      </div>
-  </div>
-  <!-- ... -->
-
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>ACTUALIZAR PRENDAS</h1>
+        <form method="" id="ActualizarProducto" class="ActualizarProducto">
+            {% csrf_token %}
+            <input type="number" id="prod_Id_Act" placeholder="id"><br>
+            <input type="text" name="prod_Nombre_Act" id="prod_Nombre_Act" placeholder="Nombre" required><br>
+            <input type="text" name="prod_Descripcion_Act" id="prod_Descripcion_Act" placeholder="Descripcion" required><br>
+            <input type="text" name="prod_Precio_Act" id="prod_Precio_Act" placeholder="precio" required><br>
+            <input type="text" name="prod_Talla_Act" id="prod_Talla_Act" placeholder="Talla" required><br>
+            <input type="text" name="prod_Color_Act" id="prod_Color_Act" placeholder="Color" required><br>
+            <input type="text" name="prod_Imagen_Act" id="prod_Imagen_Act" placeholder="Imagen"><br>
+            <button type="submit" id="ActualizarProducto" class="ActualizarProducto" value="ActualizarProducto">Actualizar Producto</button>
+        </form>
+        
+    </div>
+</div>
+<!-- ... -->
+  
+<!-- ... -->
 
   <!--modal2-->
   <div id="myModal2" class="modal">
       <div class="modal-content">
           <span class="close2">&times;</span>
           <h2>Agregar</h2>
-            <!--Formulario para insertar prendas-->
+
+            <!--Formulario para Agregar prendas-->
           
             <form method="post" id="FormProductos" enctype="multipart/form-data">
                 {% csrf_token %}
