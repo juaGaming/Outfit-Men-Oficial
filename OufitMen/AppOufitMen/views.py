@@ -35,7 +35,9 @@ class InsertarProducto(View):
 
 def InventarioAdmin(request): 
     return render (request, "InventarioAdmin.html")
-    
+
+def Inicio(request): 
+    return render (request, "inicio.html")    
     
     #metodo para listar Prendas
 

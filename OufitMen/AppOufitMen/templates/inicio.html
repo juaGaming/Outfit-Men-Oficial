@@ -1,0 +1,210 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/Css/styless3.css' %}">
+    <link rel="stylesheet" href="{% static '/Css/header2.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Inicio</title>
+</head>
+<body>
+
+  <div class="header">
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="{% static '/img/logoBlanco.png ' %}" alt="Logo" class="header-logo">
+        </a>
+        <ul class="navbar-brand">
+            <li><a href="/VistasUsuario/index3.html">Urban</a></li>
+            <li><a href="/VistasUsuario/index4.html">Casual</a></li>
+            <li><a href="/VistasUsuario/index5.html">Formal</a></li>
+            <li><a href="/Login Y Registro/login.html">Iniciar Sesion</a></li>
+            <li><a href="/Login Y Registro/Registro.html">Registrarme</a></li>
+        </ul>
+        <!-- Icono del carrito de compras -->
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+        <!-- Botón para mostrar el carrito de compras  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>
+
+<h1 id="categoria" >Outfit Urbanos</h1>
+
+
+<div class="imgbanner">
+    <img src="" alt="">
+</div>
+
+    <!-- <div class="contenedor">
+        comentar crtl + k + c
+
+
+      <div class="carousel-container">
+        <button class="carousel-button prev disabled" onclick="prevSlide()">Anterior</button>
+        <div class="carousel">
+            <img src="/img/Helegante.jpg" alt="Imagen 1">
+            <img src="/Imagenes/Helegante3.jpg" alt="Imagen 3">
+           
+        </div>
+        <button class="carousel-button next" onclick="nextSlide()">Siguiente</button>
+  </div>
+</div> -->
+
+
+
+<div class="contenedor1" >
+
+<div class="card">
+    <img class="tarjeta1" src="{% static '/img/chaqueta-marron-con-acabado-deportivo.jpg ' %}" alt="Imagen de perfil">
+    <h2>Chaqueta de cuero  </h2>
+    <p > chaquta 100% de cuero con las mejores telas y costuras.</p>
+    <p id="precio">$225.000</p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card1">
+    <img src="{% static '/img/chaqueta-cuero-negra.jpg ' %}" alt="Imagen de perfil">
+    <h2>Chaqueta Cuerina </h2>
+    <p>Esta chaqueta se encuentra hecha de cuerina en tonalidadedes negro azul 
+    </p>
+    <p id="precio">$226.000</p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card1">
+    <img class="tarjeta1" src="{% static '/img/chaqueta-urban-gris.jpg ' %}" alt="Imagen de perfil">
+    <h2>Gaban verde</h2>
+    <p>Para toda clase de reuniones. ¡No esperes más a muy bajo precio!</p>
+    <p id="precio">$125.000</p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card1">
+    <img src="{% static '/img/pantalon-urban-gris.jpg ' %}" alt="Imagen de perfil">
+    <h2>pantalon en dril bota pitillo</h2>
+    <p>excelente material y costura para combinar en toda ocacion .</p>
+    <p id="precio">$125.000</p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+  </div>
+
+
+<div class="contenedor1" >
+
+    <div class="card">
+        <img class="tarjeta1" src="{% static '/img/pantalon-urban- marron.jpg ' %}" alt="Imagen de perfil">
+        <h2>Pantalon marron</h2>
+        <p>No esperes más, es el momento de darte este gusto.</p>
+        <p id="precio">$125.000</p>
+        <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+    
+    <div class="card">
+        <img src="{% static '/img/pantalon-casual-marron.jpg ' %}" alt="Imagen de perfil">
+        <h2>pantalon cafe </h2>
+        <p>El mejor estilo para sentirte comodo y a gusto!</p>
+        <p id="precio">$125.000</p>
+        <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+    
+    <div class="card">
+        <img  src="{% static '/img/camisa casual marron.jpg ' %}" alt="Imagen de perfil">
+        <h2>Camisa verano</h2>
+        <p>Para toda clase de reuniones y eventos . </p>
+        <p id="precio">$75.000</p>
+        <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+    
+    <div class="casualverde">
+        <img src="{% static '/img/camisa casual verde olivo.jpg ' %}" alt="Imagen de perfil">
+        <h2>Camisa verde </h2>
+        <p>Solo para ocaciones de playa o sol </p>
+        <p id="precio">$125.000</p>
+        <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+    </div>
+
+
+    <div class="contenedor1" >
+
+        <div class="Zapatos">
+            <img class="tarjeta1" src="{% static '/img/calzado buyman balnco con gris.jpg ' %}" alt="Imagen de perfil">
+            <h2>Zapatillas de colores </h2>
+            <p>Zapatillas de colores para todo tipo de salidas</p>
+            <p id="precio">$125.000</p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        
+        <div class="Zapatos1">
+            <img src="{% static '/img/calzado casual gris.jpg ' %}" alt="Imagen de perfil">
+            <h2>zapato gris casual</h2>
+            <p>El mejor estilo para tu dia a dia disfruta de ellos!</p>
+            <p id="precio">$125.000</p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        
+        <div class="card">
+            <img class="tarjeta1" src="{% static '/img/calzado casual cafe.jpg ' %}" alt="Imagen de perfil">
+            <h2>zapatos  Elegantes</h2>
+            <p>Para toda clase de reuniones  de material resistente y buena durabilidad</p>
+            <p id="precio">$125.000</p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        
+        <div class="Zapatos3">
+            <img src="{% static '/img/calzado casual cuero marron.jpg ' %}" alt="Imagen de perfil">
+            <h2>zapatos cafes</h2>
+            <p>Solo para ocasiones especiales.</p>
+            <p id="precio">$125.000</p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        </div>
+
+
+
+    <footer>
+      <div class="footer-logo">
+        
+      </div>
+      <ul class="footer-links">
+          <li><a href="#">inicio</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contactos</a></li>
+      </ul>
+      <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2023 Juan Gonzalez - &copy;2023 Jorge Sepulveda - &copy;2023 Carlos Camacho</p>
+      
+    </footer>
+
+
+
+<script src="{% static '/js/contadorCarrito.js ' %}"></script>
+</body>
+</html>
