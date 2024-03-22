@@ -1,0 +1,457 @@
+
+
+
+
+.imgbanner{
+    width: 80.3%;
+    height: 190px;
+    margin-left: 160px;
+    padding: 50px;
+    background-image: url(../img/logo_Outfits_men.png);
+    background-color: yellowgreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.cajaPrincipal{
+margin: 25px;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1500px;
+    height: 550px;
+    margin: 30px auto;
+    margin-top: 100px;
+    text-align: center;
+    box-shadow:#594104 1px 1px 20px;
+}
+
+#precio{
+    color: #000000;
+}
+
+/*footer*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/*carousel*/
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 450px; /* Ancho del carrusel */
+    margin: 0 auto;
+}
+
+/* Estilos para las diapositivas (imágenes) */
+.carousel img {
+    width: 90%;
+    height: auto;
+}
+
+/* Estilos para los botones de navegación */
+.carousel-button {
+    background-color: #63437d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para los botones previos y siguientes */
+.prev, .next {
+    margin-top: 20px;
+}
+
+/* Estilo para ocultar el botón previo al principio */
+.prev.disabled {
+    display: none;
+}
+
+/* Estilo para ocultar el botón siguiente al final */
+.next.disabled {
+    display: none;
+}
+
+
+
+/*contenedor1  General*/
+
+.contenedor1{
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    border: 1px solid #ccc; /* Solo para mostrar los límites del contenedor */
+    box-shadow:#594104 1px 1px 20px;
+}
+
+/*titulo*/
+
+.Titulo{
+    width: 100%;
+    text-align: center;
+    font-size:40px ;
+
+}
+
+/* cards */
+
+/* Estilos generales para las tarjetas */
+.card {
+    width: 270px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+
+/*card 1 en el html*/
+
+.card1{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+   
+}
+
+
+.card1 img {
+    max-width: 100%;
+    height:265px;
+    border-radius: 20%;
+}
+
+.card1 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #fffcfc;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card1 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+
+/*estilos para camisa verde*/
+
+
+.casualverde{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.casualverde img {
+    max-width: 100%;
+    height:320px;
+    border-radius: 20%;
+}
+
+.casualverde .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #fffdfd;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.casualverde .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+
+/*estilos para car Zapatos*/
+
+
+
+
+
+
+
+.Zapatos{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.Zapatos img {
+    max-width: 100%;
+    height:300px;
+    border-radius: 20%;
+}
+
+.Zapatos .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Zapatos .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+
+
+
+
+
+
+
+.Zapatos1{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.Zapatos1 img {
+    max-width: 100%;
+    height:300px;
+    border-radius: 20%;
+}
+
+.Zapatos1 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.Zapatos1 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+/*Zapatos3*/
+
+
+.Zapatos3{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.Zapatos3 img {
+    max-width: 100%;
+    height:315px;
+    border-radius: 20%;
+}
+
+.Zapatos3 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Zapatos3 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
+
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+.card p {
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 10px;
+}
+
+/* Estilo para el botón en la tarjeta */
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #f7f0f0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Hover para el botón */
+.card .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+
+/* Estilos para el icono del carrito de compras */
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Estilos para el número de elementos en el carrito */
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #FF5733;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    animation: bounce 0.5s infinite alternate;
+}
+
+
+
+
+#categoria {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: #ffffff 10px 10px 7px;
+    color: #594104;
+    font-size: 40px;
+  }
+
+
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

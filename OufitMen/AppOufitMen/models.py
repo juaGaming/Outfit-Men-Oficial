@@ -1,17 +1,18 @@
 from django.db import models
+from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 
-class Usuario(models.Model):
+class Usuario(AbstractBaseUser):
     Usu_Documento = models.BigIntegerField(verbose_name="N° Documento", primary_key=True)
     Usu_Nombre = models.TextField(max_length=40)
     Usu_Apellido = models.TextField(max_length=40)
-    Usu_Contraseña = models.TextField(max_length=30)
-    Usu_Correo = models.EmailField(max_length=50, verbose_name="Correo Electronico")
-
+    Usu_Correo = models.EmailField(max_length=50, unique=True, verbose_name="Correo Electronico")
+    #USERNAME_FIELD = 'Usu_Documento'
+    USERNAME_FIELD = 'Usu_Documento'
     
 class Categoria_producto(models.Model):
-     Id_Categoria=models.AutoField(verbose_name="id categoria",primary_key=True)
-     Nombre=models.TextField(max_length= 40)
-     Descripcion=models.TextField(max_length=250)
+    Id_Categoria=models.AutoField(verbose_name="id categoria",primary_key=True)
+    Nombre=models.TextField(max_length= 40)
+    Descripcion=models.TextField(max_length=250)
 
 
 class Producto(models.Model):

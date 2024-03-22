@@ -1,12 +1,18 @@
-from django import forms
 from .models import *
 from django.contrib.auth.forms import *
+from .models import Usuario
 from django import forms
-from .models import Producto
 
-#Formulario para insertar producto
+#LoginUsuarios
 
-class ProductoForm(forms.ModelForm):
+
+class UsuarioCreationForm(UserCreationForm):
     class Meta:
-        model = Producto
-        fields = ['prod_Nombre', 'prod_Descripcion', 'prod_Precio', 'prod_Talla', 'prod_Color','prod_Imagen']
+        model = Usuario
+        fields = ('Usu_Documento', 'Usu_Nombre', 'Usu_Apellido', 'Usu_Correo')
+
+
+
+class LoginForm(forms.Form):
+    correo = forms.EmailField(label='Correo Electrónico')
+    password = forms.CharField(widget=forms.PasswordInput)
