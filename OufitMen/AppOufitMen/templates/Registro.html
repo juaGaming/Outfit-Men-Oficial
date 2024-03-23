@@ -16,40 +16,52 @@
             <div class="circle-3"></div>
             <div class="box">
                 <h3>Formulario de Registro</h3>
-                {% comment %} <form action="">
-                    <div>
-                        <input type="text" placeholder="N° Documento" required class="input_controlador">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Nombre" required class="input_controlador">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Apellido" required class="input_controlador">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Correo electrónico" required class="input_controlador">
-                    </div>
-                    <div>
-                        <input type="password" placeholder="Contraseña" required class="input_controlador">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Número de cédula" required class="input_controlador">
-                    </div>
-                    <div>
-                        <input type="tel" placeholder="Número de teléfono" required class="input_controlador">
-                    </div>
-                    <button type="submit" value="Registrarse" class="btn">Registrarse</button>
-                </form> {% endcomment %}
+
 
                 <form method="post">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit">Registrarse</button>
-                </form>
-                
-                <p>ya tiene cuenta? <a href="Login.html">dale clik</a></p>
-            </div>
+                    <input type="hidden" name="csrfmiddlewaretoken" value="HjhE1A5helaiWoLIGQiLhGwjrLvHnPw1A0N4imBLZyTxNioNJgAEH34lXOebCuX8">
+                    <p>
+    <input type="number" name="Usu_Documento" min="-9223372036854775808" max="9223372036854775807" autofocus="" required="" id="id_Usu_Documento" placeholder="Documento">
+    
+    
+  </p>
+
+  
+  <p>
+    <input type="text" name="Usu_Nombre" cols="40" rows="10" maxlength="40" required="" id="id_Usu_Nombre" placeholder="Nombre">
+    
+    
+  </p>
+
+  
+  <p>
+    <input type="text" name="Usu_Apellido" cols="40" rows="10" maxlength="40" required="" id="id_Usu_Apellido" placeholder="Apellido">
+    
+    
+  </p>
+
+  
+  <p>
+    <input type="email" name="Usu_Correo" maxlength="50" required="" id="id_Usu_Correo" placeholder="Correo Electronico">
+  </p>
+
+  
+  <p>
+    <input type="password" name="password1" autocomplete="new-password" required="" id="id_password1" aria-autocomplete="list" placeholder="Contraseña">
+    
+      <span class="helptext"></span></p><ul><li>Su contraseña no puede ser muy similar a su otra información personal.</li><li>Su contraseña debe contener al menos 8 caracteres.</li><li>Su contraseña no puede ser una contraseña de uso común.</li><li>Su contraseña no puede ser completamente numérica.</li></ul>
+    
+    
+
+  <p>
+    <input type="password" name="password2" autocomplete="new-password" required="" id="id_password2" placeholder="Confirmar Contraseña">
+      <span class="helptext">Introduzca la misma contraseña que antes, para la verificación.</span>
+  </p>
+        <button type="submit" id="BotonEnvio">Registrarse</button>
+    </form>       
+    <p>ya tiene cuenta? <a href="Login.html">Iniciar Sesion</a></p>
         </div>
+    </div>
 
     </section>
     

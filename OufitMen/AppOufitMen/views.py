@@ -15,7 +15,6 @@ from .Form import *
 
 
 
-
     #metodo para insertar Prendas
 class InsertarProducto(View):
     @method_decorator(csrf_exempt)
@@ -41,20 +40,16 @@ class InsertarProducto(View):
 
 def InventarioAdmin(request): 
     return render (request, "InventarioAdmin.html")
-#===== HEAD
 
 def Inicio(request): 
     return render (request, "inicio.html")    
     
-#======
     
 def Registro(request):
     return render (request, "Registro.html")
-#>>>>>>> 51da5613d679ec185ced57e646ddb9a9eeea3913
-    #metodo para listar Prendas
 
 
-
+#metodo para listar Prendas
 class ListarPrendas(View):
     def get(self, request):
         datos = Producto.objects.all()
@@ -101,8 +96,6 @@ class BuscarProducto(View):
 
 
 
-    
-
 #metodo para actualizar prendas
 class ActualizarProducto(View):
     @method_decorator(csrf_exempt)
@@ -141,8 +134,6 @@ class EliminarPrendas(View):
         deleteProducto.delete()
         return JsonResponse({"Mensaje":"Prenda Eliminada"})
     
-
-
 
 #metodo para registrar Usuario
 def registro(request):

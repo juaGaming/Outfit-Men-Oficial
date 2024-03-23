@@ -86,7 +86,7 @@ DATABASES = {
         'HOST':'127.0.0.1',
         'DATABASE_PORT':'5432',
         'USER':'postgres',
-        'PASSWORD':'Isabella2016',
+        'PASSWORD':'0000',
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'DB_ROPA',#ponemos datos para la conexion de la base de datos
     }

@@ -24,15 +24,10 @@ urlpatterns = [
     path('BuscarProducto/<int:pk>/', views.BuscarProducto.as_view(), name='BuscarProducto'),
     path('EliminarPrendas/<int:pk>',EliminarPrendas.as_view(),name='eliminar'),
     
-#<<<<<<< HEAD
     #Llamamos el metodo para cargar el menu inicio
     path('Inicio',views.Inicio,name="VistaInicio"),
-#=======
     
     #inicio
-    
     path('Registro',views.Registro, name="Registro_Usuario"),
     
-
-#>>>>>>> 51da5613d679ec185ced57e646ddb9a9eeea3913
 ]
