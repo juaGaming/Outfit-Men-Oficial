@@ -25,9 +25,11 @@ urlpatterns = [
     path('EliminarPrendas/<int:pk>',EliminarPrendas.as_view(),name='eliminar'),
     
     #Llamamos el metodo para cargar el menu inicio
-    path('Inicio',views.Inicio,name="VistaInicio"),
+    path('',views.Inicio,name="VistaInicio"),
     
     #inicio
     path('Registro',views.Registro, name="Registro_Usuario"),
+
+
     
 ]
