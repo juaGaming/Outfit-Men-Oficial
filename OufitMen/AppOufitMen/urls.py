@@ -20,12 +20,12 @@ urlpatterns = [
     path('InventarioAdmin',views.InventarioAdmin,name="InventarioAdmin"),
     path('InsertarPrendas/',InsertarProducto.as_view(),name='InsertarPrendas'),
     path('listarPrendas',ListarPrendas.as_view(), name='listarPrendas'),
-    path('ActualizarProducto/<int:pk>',ActualizarProducto .as_view(), name='ActualizarProducto'),
+    path('ActualizarProducto/<int:pk>',ActualizarProducto.as_view(), name='ActualizarProducto'),
     path('BuscarProducto/<int:pk>/', views.BuscarProducto.as_view(), name='BuscarProducto'),
     path('EliminarPrendas/<int:pk>',EliminarPrendas.as_view(),name='eliminar'),
     
     #Llamamos el metodo para cargar el menu inicio
-    path('',views.Inicio,name="VistaInicio"),
+    path('Inicio',views.Inicio,name="VistaInicio"),
     
     #inicio
     path('Registro',views.Registro, name="Registro_Usuario"),

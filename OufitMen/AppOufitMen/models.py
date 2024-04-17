@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 
+
 class Usuario(AbstractBaseUser):
     Usu_Documento = models.BigIntegerField(verbose_name="N° Documento", primary_key=True)
     Usu_Nombre = models.TextField(max_length=40)

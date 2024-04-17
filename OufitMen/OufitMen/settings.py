@@ -26,13 +26,17 @@ SECRET_KEY = 'django-insecure-k5gr281t9u$o%1p!a3b_!!m-e7wquz818d9(s*gp!*46u7!$e2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Otras configuraciones...
 
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = True
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'AppOufitMen',
+    'widget_tweaks',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,10 +46,10 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -86,7 +90,7 @@ DATABASES = {
         'HOST':'127.0.0.1',
         'DATABASE_PORT':'5432',
         'USER':'postgres',
-        'PASSWORD':'Isabella2016',
+        'PASSWORD':'0000',
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'DB_ROPA',#ponemos datos para la conexion de la base de datos
     }
@@ -145,3 +149,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Redirigir a la URL de inicio después de iniciar sesión (redirige por defecto a /accounts/profile/)
+LOGIN_REDIRECT_URL = '/Inicio'

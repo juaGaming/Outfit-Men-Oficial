@@ -5,13 +5,15 @@ from django.http import JsonResponse
 from django.views import View
 from .models import Producto
 from django.utils.decorators import method_decorator
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.core.serializers.json import DjangoJSONEncoder
 from django.shortcuts import render, redirect
 from .Form import UsuarioCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from .Form import *
+from .Form import LoginForm
+
 
 
 
@@ -47,6 +49,8 @@ def Inicio(request):
     
 def Registro(request):
     return render (request, "Registro.html")
+
+
 
 
 #metodo para listar Prendas
@@ -145,7 +149,7 @@ def registro(request):
             return redirect('Page_Inicio')
     else:
         form = UsuarioCreationForm()
-    return render(request, 'registro.html', {'form': form})
+    return render(request, 'Registro.html', {'form': form})
 
 
 from django.contrib.auth import authenticate, login
@@ -161,16 +165,26 @@ class IniciarSesionView(View):
             correo = form.cleaned_data.get('correo')  # Obtener el correo electrónico del formulario
             password = form.cleaned_data.get('password')
             print("Correo:", correo)
-    
+
+            print("Correo:", correo)
+            user = authenticate(request, correo=correo, password=password)
+            print("Usuario autenticado:", user)
+            
             # Autenticar al usuario utilizando el correo electrónico y la contraseña
-            user = authenticate(request, Usu_Correo=correo, password=password)
+            user = authenticate(request, correo=correo, password=password)
             print("error ",user)
             if user is not None:
                 # Si el usuario es autenticado correctamente, iniciar sesión y redirigir
                 login(request, user)
                 print("Usuario autenticado:", user)
                 return redirect('InventarioAdmin')
+            else:
+                # Si la autenticación falla, añade un mensaje de error al formulario
+                form.add_error(None, "Nombre de usuario o contraseña incorrectos.")
 
+        else:
+            # Si el formulario no es válido, imprime los errores de validación en la consola
+            print("Errores de validación:", form.errors)
         # Si la autenticación falla, renderizar el formulario nuevamente con un mensaje de error
         print("Autenticación fallida")
         return render(request, 'Login.html', {'form': form})

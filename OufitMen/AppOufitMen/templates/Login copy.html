@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{% static '/Css/Login.css' %}">
 </head>
 <body>
-    <!---->
-    <form method="post" action="{% url 'iniciar_sesion' %}">
+    
+    <form method="post" action="{% url 'Inicio' %}">
         {% csrf_token %}
         <div class="form-content">
 
@@ -19,25 +19,25 @@
 
             <div class="box">
                 <h3>Bienvenido</h3>
-                                  
+                <form action="">
+                    
                     <div>
-                        <input type="email" placeholder="Correo Electronico" class="input_controlador" id="correo" name="correo" required>
+                        <input type="text" placeholder="Nombre Usuario" class="input_controlador" id="username" name="username" required>
                     </div>
                     <div>
-                        <input type="password" placeholder="Contraseña" class="input_controlador"  id="password" name= "password" required>
+                        <input type="password" placeholder="Contraseña" class="input_controlador"  id="password" required>
                         <div class="input-link">
                             <a href="" class="gradiente-text">Has olvidado la Contraseña</a>
                         </div>
                     </div>
                     <button type="submit" class="btn" value="Login" id="login-button">Iniciar Sesion</button>
-               
-                <p>No tienen una cuenta?  <a href="/AppOufitMen/templates/Registro.html">Crear cuenta</a></p>
+                </form>
+                <p>No tienen una cuenta?  <a href="RegistroUsuario">Crear cuenta</a></p>
 
                 <div id="role-links" style="display: none;">
-                    
                     <p>Selecciona tu rol:</p>
                     <a href="Inicio">Inicio</a>
-                    <a href="/AppOufitMen/templates/InventarioAdmin.html">Admin</a>
+                    <a href="Inicio">Admin</a>
                 </div>
 
             </div>
