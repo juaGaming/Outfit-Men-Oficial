@@ -40,8 +40,18 @@ class InsertarProducto(View):
         Producto.objects.create(prod_Nombre=prod_Nombre,prod_Descripcion=prod_Descripcion,prod_Precio=prod_Precio,prod_Talla=prod_Talla,prod_Color=prod_Color,prod_Imagen=prod_Imagen)
         return JsonResponse({"mensaje":"Datos Guardados"})
 
+def Casual(request):
+    return render (request, "Casual.html")
+
+def Formal(request):
+    return render (request, "Formal.html")
+
+def Urban(request):
+    return render (request, "Urban.html")
+
 def InventarioAdmin(request): 
-    return render (request, "InventarioAdmin.html")
+    context = {'username': request.user.username}
+    return render (request, "InventarioAdmin.html",context)
 
 def Inicio(request): 
     return render (request, "inicio.html")    
@@ -140,51 +150,51 @@ class EliminarPrendas(View):
     
 
 #metodo para registrar Usuario
-def registro(request):
-    if request.method == 'POST':
-        form = UsuarioCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            # Redireccionar a una página después de un registro exitoso
-            return redirect('Page_Inicio')
-    else:
-        form = UsuarioCreationForm()
-    return render(request, 'Registro.html', {'form': form})
+# def registro(request):
+#     if request.method == 'POST':
+#         form = UsuarioCreationForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             # Redireccionar a una página después de un registro exitoso
+#             return redirect('Page_Inicio')
+#     else:
+#         form = UsuarioCreationForm()
+#     return render(request, 'Registro.html', {'form': form})
 
 
-from django.contrib.auth import authenticate, login
+# from django.contrib.auth import authenticate, login
 
-class IniciarSesionView(View):
-    def get(self, request):
-        form = LoginForm()
-        return render(request, 'Login.html', {'form': form})
+# class IniciarSesionView(View):
+#     def get(self, request):
+#         form = LoginForm()
+#         return render(request, 'Login.html', {'form': form})
 
-    def post(self, request):
-        form = LoginForm(data=request.POST)
-        if form.is_valid():
-            correo = form.cleaned_data.get('correo')  # Obtener el correo electrónico del formulario
-            password = form.cleaned_data.get('password')
-            print("Correo:", correo)
+#     def post(self, request):
+#         form = LoginForm(data=request.POST)
+#         if form.is_valid():
+#             correo = form.cleaned_data.get('correo')  # Obtener el correo electrónico del formulario
+#             password = form.cleaned_data.get('password')
+#             print("Correo:", correo)
 
-            print("Correo:", correo)
-            user = authenticate(request, correo=correo, password=password)
-            print("Usuario autenticado:", user)
+#             print("Correo:", correo)
+#             user = authenticate(request, correo=correo, password=password)
+#             print("Usuario autenticado:", user)
             
-            # Autenticar al usuario utilizando el correo electrónico y la contraseña
-            user = authenticate(request, correo=correo, password=password)
-            print("error ",user)
-            if user is not None:
-                # Si el usuario es autenticado correctamente, iniciar sesión y redirigir
-                login(request, user)
-                print("Usuario autenticado:", user)
-                return redirect('InventarioAdmin')
-            else:
-                # Si la autenticación falla, añade un mensaje de error al formulario
-                form.add_error(None, "Nombre de usuario o contraseña incorrectos.")
+#             # Autenticar al usuario utilizando el correo electrónico y la contraseña
+#             user = authenticate(request, correo=correo, password=password)
+#             print("error ",user)
+#             if user is not None:
+#                 # Si el usuario es autenticado correctamente, iniciar sesión y redirigir
+#                 login(request, user)
+#                 print("Usuario autenticado:", user)
+#                 return redirect('InventarioAdmin')
+#             else:
+#                 # Si la autenticación falla, añade un mensaje de error al formulario
+#                 form.add_error(None, "Nombre de usuario o contraseña incorrectos.")
 
-        else:
-            # Si el formulario no es válido, imprime los errores de validación en la consola
-            print("Errores de validación:", form.errors)
-        # Si la autenticación falla, renderizar el formulario nuevamente con un mensaje de error
-        print("Autenticación fallida")
-        return render(request, 'Login.html', {'form': form})
+#         else:
+#             # Si el formulario no es válido, imprime los errores de validación en la consola
+#             print("Errores de validación:", form.errors)
+#         # Si la autenticación falla, renderizar el formulario nuevamente con un mensaje de error
+#         print("Autenticación fallida")
+#         return render(request, 'Login.html', {'form': form})

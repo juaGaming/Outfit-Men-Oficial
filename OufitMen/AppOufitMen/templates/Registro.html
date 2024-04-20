@@ -1,64 +1,71 @@
 {%load static%}
- 
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Registro</title>
-    <link rel="stylesheet" href="{% static '/Css/Registro.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="{% static '/Css/Registro.css' %}">
 </head>
+
 <body>
 
-    <section class="form-main">
-        <div class="form-content">
-          
-            <div class="circle-1"></div>
-            <div class="circle-2"></div>
-            <div class="circle-3"></div>
-            <div class="box">
-                <h3>Formulario de Registro</h3>
+  <section class="form-main">
+    <div class="form-content">
+
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="box">
+        <h3>Formulario de Registro</h3>
+
+        <form action="/RegistroUsuario/" method="POST">
+          {% csrf_token %}
+
+            <input type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username"
+              autofocus="" required="" id="id_username" placeholder="Nombre de Usuario">
+            <span class="helptext">Requerido. 150 caracteres o menos. Letras, dígitos y @/./+/-/_ únicamente.</span>
+          </p>
+
+          <p>
+            <input type="password" name="password1" autocomplete="new-password" required="" id="id_password1"
+              aria-autocomplete="list" placeholder="Contraseña">
+
+            <span class="helptext"></span>
+          </p>
+          <ul>
+            <li>Su contraseña no puede ser muy similar a su otra información personal</li>
+            <li>Su contraseña debe contener al menos 8 caracteres.</li>
+            <li>Su contraseña no puede ser una contraseña de uso común.</li>
+            <li>Su contraseña no puede ser completamente numérica.</li>
+          </ul>
 
 
-                <form method="post">
-                  {% csrf_token %}
-                  
-                    <p>
-                    <input type="number" name="Usu_Documento" min="-9223372036854775808" max="9223372036854775807" autofocus="" required="" id="id_Usu_Documento" placeholder="Documento">
-    
-                    </p>
+          <p></p>
 
-                    <p>
-                      <input type="text" name="Usu_Nombre" cols="40" rows="10" maxlength="40" required="" id="id_Usu_Nombre" placeholder="Nombre">
-                      
-                      
-                    </p>
 
-                    <p>
-                      <input type="text" name="Usu_Apellido" cols="40" rows="10" maxlength="40" required="" id="id_Usu_Apellido" placeholder="Apellido">
-                    </p>
+          <p>
+            <input type="password" name="password2" autocomplete="new-password" required="" id="id_password2" placeholder="Confirma Tu Contraseña">
 
-                    <p>
-                      <input type="email" name="Usu_Correo" maxlength="50" required="" id="id_Usu_Correo" placeholder="Correo Electronico">
-                    </p>
+            <span class="helptext">Ingrese la misma contraseña que antes, para verificación.</span>
 
-                    <p>
-                      <input type="password" name="password1" autocomplete="new-password" required="" id="id_password1" aria-autocomplete="list" placeholder="Contraseña">
-                      
-                        <span class="helptext"></span></p><ul><li>Su contraseña no puede ser muy similar a su otra información personal.</li><li>Su contraseña debe contener al menos 8 caracteres.</li><li>Su contraseña no puede ser una contraseña de uso común.</li><li>Su contraseña no puede ser completamente numérica.</li></ul>
 
-                    <p>
-                      <input type="password" name="password2" autocomplete="new-password" required="" id="id_password2" placeholder="Confirmar Contraseña">
-                        <span class="helptext">Introduzca la misma contraseña que antes, para la verificación.</span>
-                    </p>
-                          <button type="submit" id="BotonEnvio">Registrarse</button>
-                </form>       
-    <p>ya tiene cuenta? <a href="/AppOufitMen/templates/Login.html">Iniciar Sesion</a></p>
-        </div>
+
+
+          </p>
+          <button id="BotonEnvio" class="btn btn-primary">Registrarme</button>
+        </form>
+        <p>ya tiene cuenta? <a href="/Iniciar_Sesion">Iniciar Sesion</a></p>
+
+      </div>
     </div>
+    {{error}}
 
-    </section>
-    
+
+  </section>
+
 </body>
-</html>
 
+</html>

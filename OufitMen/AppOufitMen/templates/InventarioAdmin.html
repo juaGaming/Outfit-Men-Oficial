@@ -27,7 +27,12 @@
             </a>
             <ul class="navbar-brand">
                 <li><a href="/VistasAdministrador/index.html">Inventario-Articulos</a></li>
-                <li><a href="/VistasUsuario/index3.html">Cerrar Sesion</a></li>
+           
+                <li><a href="/Cerrar_Sesion">Cerrar Sesion</a></li>
+
+                {% if user.is_authenticated %}
+                <P>Hola {{ username }}</P>
+                {% endif %} 
             </ul>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,8 +40,10 @@
         </nav>
     </div>
 
-
+    <br>
 <section class="cont">
+
+   
 
   <div class="cabezera">
       <h1>Administrador</h1>

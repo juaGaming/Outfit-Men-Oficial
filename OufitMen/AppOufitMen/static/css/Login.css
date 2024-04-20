@@ -185,3 +185,26 @@ a{
     text-align: center;
 }
 
+#id_username{
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    user-select: none;
+    border: none;
+    position: relative;
+}
+
+#id_password{
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    user-select: none;
+    border: none;
+    position: relative;
+}

@@ -9,7 +9,7 @@
 </head>
 <body>
     <!---->
-    <form method="post" action="{% url 'iniciar_sesion' %}">
+    <form method="post" action="{% url 'Iniciar_Sesion' %}">
         {% csrf_token %}
         <div class="form-content">
 
@@ -21,24 +21,17 @@
                 <h3>Bienvenido</h3>
                                   
                     <div>
-                        <input type="email" placeholder="Correo Electronico" class="input_controlador" id="correo" name="correo" required>
+                        <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username" placeholder="Usuario ejemplo: Daniel2001">
                     </div>
                     <div>
-                        <input type="password" placeholder="Contraseña" class="input_controlador"  id="password" name= "password" required>
+                        <input type="password" name="password" autocomplete="current-password" required="" id="id_password" placeholder="Contraseña">
                         <div class="input-link">
                             <a href="" class="gradiente-text">Has olvidado la Contraseña</a>
                         </div>
-                    </div>
+                    </div> 
                     <button type="submit" class="btn" value="Login" id="login-button">Iniciar Sesion</button>
                
-                <p>No tienen una cuenta?  <a href="/AppOufitMen/templates/Registro.html">Crear cuenta</a></p>
-
-                <div id="role-links" style="display: none;">
-                    
-                    <p>Selecciona tu rol:</p>
-                    <a href="Inicio">Inicio</a>
-                    <a href="/AppOufitMen/templates/InventarioAdmin.html">Admin</a>
-                </div>
+                <p>No tienen una cuenta?  <a href="/RegistroUsuario">Crear cuenta</a></p>
 
             </div>
         </div>

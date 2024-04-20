@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\camil\OneDrive\Escritorio\proyecto oficial\OufitMen\python12
+set VIRTUAL_ENV=C:\Users\camilo\Desktop\Outfit-Men-Oficial\OufitMen\python12
 
 if not defined PROMPT set PROMPT=$P$G
 

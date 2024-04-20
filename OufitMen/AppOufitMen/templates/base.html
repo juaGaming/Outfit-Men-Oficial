@@ -1,0 +1,47 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/Css/styless3.css' %}">
+    <link rel="stylesheet" href="{% static '/Css/header2.css' %}">
+    <title>OutfitMen</title>
+</head>
+<body>
+
+    <div class="header">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="{% static '/img/logoBlanco.png ' %}" alt="Logo" class="header-logo">
+            </a>
+            <ul class="navbar-brand">
+                <li><a href="/Urban">Urban</a></li>
+                <li><a href="/Casual">Casual</a></li>
+                <li><a href="/Formal">Formal</a></li>
+                <!-- {% if user.is_authenticated %}
+                <li><a href="/iniciarSesion">Iniciar Sesion</a></li>
+                {% endif %}
+                {% if user.is_authenticated %}
+                <li><a href="/RegistroUsuario">Registrarme</a></li>
+                {% endif %} -->
+                <li><a href="/RegistroUsuario">Registrarme</a></li>
+                <li><a href="/iniciarSesion">Iniciar Sesion</a></li>
+            </ul>
+            <!-- Icono del carrito de compras -->
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+            <!-- Botón para mostrar el carrito de compras  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
