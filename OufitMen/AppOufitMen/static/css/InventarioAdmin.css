@@ -209,7 +209,18 @@ body{
     
     
 }
-
+/*Estilo Boton actualizar productos*/
+.ActualizarPro{
+  width: 50%;
+    background-color: #6ad41d; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.5s ease; 
+    margin-top: 4px;
+}
 
 .btnInsertar{
     width: 15%;
@@ -234,7 +245,15 @@ body{
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-  
+  /*Estilo para el  boton de articulo */
+#prod_Id {
+ font-size:15px ;
+ width:20% ;
+ height:30px ;
+ text-align: center;
+ color: black;
+}
+
 #BuscarArticulo {
   
     width: 10%;
@@ -248,8 +267,12 @@ body{
 
 /*estilos de los botones para que cambien de color*/
 
+#BuscarArticulo:hover {
+    background-color: #5338aa; 
+}
+
 .btnEliminar:hover {
-    background-color: #e77d26; 
+  background-color: #e77d26; 
 }
 
 .btnActualizar:hover{
@@ -280,7 +303,7 @@ body{
     border: 1px solid #888;
     border-radius: 8px;
     max-width: 500px;
-    height: 550px;
+    height: 600px;
     box-shadow: 0px 4px 8px rgba(118, 7, 7, 0.1);
     text-align: center;
 }
@@ -328,13 +351,14 @@ body{
 
 /*estilos del formulario de actualizar*/
 
-#precio,
-#id
-#tipo,
-#color,
-#numero_identificacion,
-#cantidad,
-#ImagenProducto{
+#prod_Id_Act,
+#prod_Nombre_Act,
+#prod_Descripcion_Act,
+#prod_Precio_Act,
+#prod_Talla_Act,
+#prod_Color_Act,
+#prod_Imagen_Act
+{
 
     margin-top: 1%;
     border: 1px solid #ccc;
@@ -362,18 +386,6 @@ body{
     width: 250px;
     height: 30px;
     margin-bottom: 15px;
-}
-
-#ActualizarArticulo {
-    border: none;
-    background-color: #b491ce;
-    border-radius: 15px;
-    width: 250px;
-    height: 40px;
-    color: #ffffff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
 }
 
 

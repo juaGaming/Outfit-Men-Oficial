@@ -10,7 +10,7 @@ from django.core.serializers.json import DjangoJSONEncoder
 from django.shortcuts import render, redirect
 from .Form import UsuarioCreationForm
 from django.contrib import messages
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from .Form import *
 from .Form import LoginForm
 
@@ -48,7 +48,7 @@ def Formal(request):
 
 def Urban(request):
     return render (request, "Urban.html")
-
+@login_required
 def InventarioAdmin(request): 
     context = {'username': request.user.username}
     return render (request, "InventarioAdmin.html",context)
