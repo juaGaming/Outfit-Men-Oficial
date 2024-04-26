@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/Css/styless3.css' %}">
     <link rel="stylesheet" href="{% static '/Css/header2.css' %}">
+    <link rel="stylesheet" href="{% static '/Css/Casual.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/Formal.css' %}">
     <title>OutfitMen</title>
 </head>
 <body>
@@ -16,8 +17,7 @@
                 <img src="{% static '/img/logoBlanco.png ' %}" alt="Logo" class="header-logo">
             </a>
             <ul class="navbar-brand">
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/Urban">Urban</a></li>
+                <li><a href="/">Urban</a></li>
                 <li><a href="/Casual">Casual</a></li>
                 <li><a href="/Formal">Formal</a></li>
                 <!-- {% if user.is_authenticated %}

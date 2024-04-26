@@ -46,14 +46,12 @@ def Casual(request):
 def Formal(request):
     return render (request, "Formal.html")
 
-def Urban(request):
-    return render (request, "Urban.html")
 @login_required
 def InventarioAdmin(request): 
     context = {'username': request.user.username}
     return render (request, "InventarioAdmin.html",context)
 
-def Inicio(request): 
+def Urban(request): 
     return render (request, "inicio.html")    
     
     

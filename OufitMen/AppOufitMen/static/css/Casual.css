@@ -1,0 +1,552 @@
+.titulo{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: #ffffff 10px 10px 7px;
+    color: #594104;
+    font-size: 40px;
+}
+
+
+
+.contenedor{
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    border: 1px solid #ccc; /* Solo para mostrar los límites del contenedor */
+    margin-top:30px;
+    box-shadow:#594104 1px 1px 20px;
+}
+
+.contenedor1{
+
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center; 
+    border: 1px solid #ccc; 
+    box-shadow:#594104 1px 1px 20px;
+}
+
+.contenedor3{
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center; 
+    border: 1px solid #ccc; 
+    box-shadow:#594104 1px 1px 20px;
+}
+
+
+
+/*cart 3 contenedor 1*/
+
+.card3cont1{
+    width: 308px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+
+     
+}
+
+
+.card3cont1 img {
+    max-width: 100%;
+    height:320px;
+    border-radius: 20%;
+}
+
+.card3cont1 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card3cont1 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+
+
+
+/* Estilos generales para las tarjetas */
+.card {
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+/* Estilo para la imagen en la tarjeta */
+.card img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 20%;
+}
+
+/* Estilo para el título de la tarjeta */
+.card h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Estilo para la descripción de la tarjeta */
+.card p {
+    font-size: 1rem;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* Estilo para el botón en la tarjeta */
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #653e06;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Hover para el botón */
+.card .btn:hover {
+    background-color: #b6c722;
+}
+    
+
+
+/*card 4 contenedor 1*/
+
+.chaquetaAzul{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+    
+
+
+
+.chaquetaAzul img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 20%;
+}
+
+
+.chaquetaAzul .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #653e06;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.chaquetaAzul .btn:hover {
+    background-color: #a7a710cd;
+}
+
+/*card 1 contenedor 2*/
+
+
+
+.chaquetamangas{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.chaquetamangas img {
+    max-width: 100%;
+    height:275px;
+    border-radius: 20%;
+}
+
+.chaquetamangas .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.chaquetamangas .btn:hover {
+    background-color: #a7a710cd;
+}
+
+/*cart 3 contenedor 2*/
+
+.card3{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card3 img {
+    max-width: 100%;
+    height:315px;
+    border-radius: 20%;
+}
+
+.card3 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card3 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+/*cart 4 contenedor 2*/
+
+.card4{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card4 img {
+    max-width: 100%;
+    height:255px;
+    border-radius: 20%;
+}
+
+.card4 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card4 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+/*card 1 contenedor 3*/
+
+
+
+.card1con3{
+    width: 290px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card1con3 img {
+    max-width: 100%;
+    height:280px;
+    border-radius: 20%;
+}
+
+.card1con3 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card1con3 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+/*cart 2  contenedor 3*/
+
+
+
+.card2con3{
+    width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card2con3 img {
+    max-width: 100%;
+    height: 425px;
+    border-radius: 20%;
+}
+
+.card2con3 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card2con3 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+/*cart 3 contenedore 3*/
+
+.card3con3{
+    width:320px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card3con3 img {
+    max-width: 100%;
+    height:410px;
+    border-radius: 20%;
+}
+
+.card3con3 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card3con3 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+/*cart 4 contenedor 3*/
+
+
+.card4con3{
+   width:320px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card4con3 img {
+    max-width: 100%;
+    height:320px;
+    border-radius: 20%;
+}
+
+
+.card4con3 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card4con3 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el icono del carrito de compras */
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Estilos para el número de elementos en el carrito */
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #f000cc;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    animation: bounce 0.5s infinite alternate;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
+
+
+/*footer*/
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+

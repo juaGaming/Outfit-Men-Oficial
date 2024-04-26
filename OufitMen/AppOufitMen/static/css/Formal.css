@@ -1,0 +1,543 @@
+.titulo{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: #ffffff 10px 10px 7px;
+    color: #594104;
+    font-size: 40px;
+}
+
+
+.ctFormal{
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    border: 1px solid #ccc; /* Solo para mostrar los límites del contenedor */
+    margin-top: 60px;
+    box-shadow:#594104 1px 1px 20px;
+}
+
+.card{
+background-color: rgb(131, 18, 151);
+width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+
+}
+
+
+.card img {
+    max-width: 100%;
+    height:280px;
+    border-radius: 20%;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+.card1{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+
+}
+
+
+.card1 img {
+    max-width: 100%;
+    height:280px;
+    border-radius: 20%;
+}
+
+.card1 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card1 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+/* CONTENEDOR 1 */
+
+.card2{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+
+
+}
+
+.card2 img {
+    max-width: 100%;
+    height:280px;
+    border-radius: 20%;
+}
+
+.card2 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card2 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+.card3{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card3 img {
+    max-width: 100%;
+    height: 280px;
+    border-radius: 20%;
+}
+
+.card3 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card3 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+/* contenedor general 222 */
+
+.contenedorg2{
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    border: 1px solid #ccc; /* Solo para mostrar los límites del contenedor */
+    margin-top: 100px;
+    box-shadow:#594104 1px 1px 20px;
+}
+
+.card4{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card4 img {
+    max-width: 100%;
+    height:290px;
+    border-radius: 20%;
+}
+
+.card4 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card4 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+.card5{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.card5 img {
+    max-width: 100%;
+    height:300px;
+    border-radius: 20%;
+}
+
+.card5 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card5 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+.card6{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.card6 img {
+    max-width: 100%;
+    height:300px;
+    border-radius: 20%;
+}
+
+.card6 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card6 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+.card7{
+    
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+.card7 img {
+    max-width: 100%;
+    height:320px;
+    border-radius: 20%;
+}
+
+.card7 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card7 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+.contenedorg3{
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    border: 1px solid #ccc; /* Solo para mostrar los límites del contenedor */
+    margin-top: 100px;
+    box-shadow:#594104 1px 1px 20px;
+}
+/* Se debe poner punto a cada una de las class o contenedores para ser tomados */
+
+.card8{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+.card8 img {
+    max-width: 100%;
+    height:320px;
+    border-radius: 20%;
+}
+
+.card8 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card8 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+.card9{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+.card9 img {
+    max-width: 100%;
+    height:335px;
+    border-radius: 20%;
+}
+
+.card9 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card9 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+.card10{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.card10 img {
+    max-width: 100%;
+    height:300px;
+    border-radius: 20%;
+}
+
+.card10 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card10 .btn:hover {
+    background-color: #a7a710cd;
+}
+.card11{
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+}
+
+.card11 img {
+    max-width: 100%;
+    height:300px;
+    border-radius: 20%;
+}
+
+.card11 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65451F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card11 .btn:hover {
+    background-color: #a7a710cd;
+}
+
+
+
+
+/* Estilos para el icono del carrito de compras */
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Estilos para el número de elementos en el carrito */
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: rgb(0, 42, 251);
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    animation: bounce 0.5s infinite alternate;
+}
+
+
+/*footer*/
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    }
+    
+    .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .footer-links {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .footer-links li {
+    margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    }
+    
+    .footer-social {
+    margin-top: 20px;
+    }
+    
+    .footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    }
+
+

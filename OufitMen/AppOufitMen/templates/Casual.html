@@ -1,4 +1,155 @@
 {% extends 'base.html' %}
+{%load static%}
+{%block content%}
 
-{%block contend%}
+<h2 class="titulo">Outfits Casuales</h2>
+
+<div class="contenedor">
+
+  <div class="card">
+     <img src="{% static '/img/Casual/pantalon casual.jpg' %}" alt="" class="header-logo">
+    <h2>Pantalon Abano</h2>
+    <p>Pantalon de alta calidad bota pitillo de excelente material en dril y costura </p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card">
+  <img src="{% static '/img/Casual/camisa casual 2.jpeg' %}" alt="" class="header-logo">
+    <h2>camisa casual negra  </h2>
+    <p>Camisa para todo tipo de ocasiones en material flexible y comodo</p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card3cont1">
+  <img src="{% static '/img/Casual/camisa elegante casual.webp' %}" alt="" class="header-logo">
+  <h2>camisa algodon </h2>
+  <p>para situaciones formales  con excelente material resistente</p>
+  <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="chaquetaAzul">
+  <img src="{% static '/img/Casual/chaqueta casual para hombre.jpeg' %}"   alt=""  class="header-logo">
+  <h2>Chaqueta Adidas</h2>
+  <p>Perfecto para las vacaciones  a precios muy bajos</p>
+  <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="contenedor1">
+
+  <div class="chaquetamangas">
+    <img src="{% static '/img/Casual/panatalo dril verde casual.jpeg' %}" alt="" class="header-logo">
+    <h2>pantalon verde </h2>
+    <p>compuesto por excelentes telas que brindan comodidad </p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card">
+  <img src="{% static '/img/Casual/camiseta casual 1.jpeg' %}" alt="" class="header-logo">
+    <h2>Camisa  </h2>
+    <p>Material resistente de buena constura y comodidad </p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card3">
+  <img src="{% static '/img/Casual/pantalo negro casual.jpg' %}" alt="" class="header-logo">
+  <h2>pantalon dril</h2>
+  <p>Para cualquier tipo de ocacion de  tela resistente y durabilidad</p>
+  <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card4">
+  <img src="{% static '/img/Casual/pantalon dril casual.webp' %}" alt="" class="header-logo">
+  <h2>Pantalon dril  </h2>
+  <p>para eventos formles y casuales de excelente calidad</p>
+  <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+</div>
+
+
+<!-- seccion de zapatos o tennis  casuales  -->
+
+
+<div class="contenedor3">
+
+  <div class="card1con3">
+    <img src="{% static '/img/Casual/tennis deportivos casuales.jpeg' %}" alt="" class="header-logo">
+    <h2>Tenis nike</h2>
+    <p>Alta calidad en el material de zapatos para que puedas disfrutar  de  un buen material y durabilidad de ellos</p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card2con3">
+  <img src="{% static '/img/Casual/tenis casual568.jpeg' %}" alt="" class="header-logo">
+    <h2>Tenis casuales</h2>
+    <p>zapatos formales para todo tipo de actividades</p>
+    <a href="#" class="btn">Comprar</a>
+    <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+
+<div class="card3con3">
+  <img src="{% static '/img/Casual/tennis casua 2.jpg' %}" alt="" class="header-logo">
+  <h2>Tenis depostivos</h2>
+  <p>Alta calidad en el material de zapatos para que tudisponga de  un buen material </p>
+  <a href="#" class="btn">Comprar</a>
+  <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+<div class="card4con3">
+  <img src="{% static '/img/Casual/zpattos casules elegant.jpeg' %}" alt="" class="header-logo">
+  <h2>zapatos elegantes</h2>
+  <p>zapatos de cuero de excelente estilo y presentacion  </p>
+  <a href="#" class="btn">Comprar</a>
+  <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+</div>
+
+
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <img class="logo" src="/Imagenes/bebe-durmiendo.png" alt="">
+  </div>
+  <ul class="footer-links">
+      <li><a href="#">inicio</a></li>
+      <li><a href="#">Ayuda</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contactos</a></li>
+  </ul>
+  <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p>&copy; 2023 Juan Gonzalez - &copy;2023 Jorge Sepulveda - &copy;2023 Carlos Camacho</p>
+</footer>
+
+
+<script src="/js/contadorCarrito.js"></script>
+
+
+
+
+
 {%endblock%}
+
+
+

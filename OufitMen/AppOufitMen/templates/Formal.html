@@ -1,7 +1,139 @@
 {% extends 'base.html' %}
 
-
+{%load static%}
 
 {% block content %}
+<h2 class="titulo">Outfit Formales</h2>
+    <div class="ctFormal">
+        
+        <div class="card">
+            <img src="{% static '/img/Formal/busoformal 3.jpg' %}" alt="" class="header-logo">
+            <h2>Bluso Rycky morty</h2>
+            <p>Excelente estilo y calidad de material </p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        
+        <div class="card1">
+          <img src="{% static '/img/Formal/buzo formal verde.webp' %}" alt="" class="header-logo">
+            <h2>Buso verde</h2>
+            <p>impermeable doble faz de excelente calidad y durabilidad </p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        <!-- class es con punto, cuando es id se usa #-->
+        <div class="card2">
+          <img src="{% static '/img/Formal/buzoformal 2.jpg' %}" alt="" class="header-logo">
+          <h2> Buso Deportivo</h2>
+          <p>para realizar actividadesfisicas con ampliar comodidad</p>
+          <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        
+        <div class="card3">
+          <img src="{% static '/img/Formal/formalzp2.jpg' %}" alt="" class="header-logo">
+          <h2>zapatos Elegantes</h2>
+          <p>Para uso exclusivo de eventos importantes de facil brillo</p>
+          <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+    </div>
+    
+    <div class="contenedorg2">
+        
+        <div class="card4">
+          <img src="{% static '/img/Formal/MW0MW32357_YBR_1.jpg' %}" alt="" class="header-logo">
+            <h2>buso elegante </h2>
+            <p>uso para todo tipo de ocasiones de material delicado </p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        
+        <div class="card5">
+          <img src="{% static '/img/Formal/buso formal.jpeg' %}" alt="" class="header-logo">
+            <h2>buso</h2>
+            <p>para todo tipo de ocasiones especialmente para especiales material algodon de alta calidad</p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        <!-- class es con punto, cuando es id se usa #-->
+        <div class="card6">
+          <img src="{% static '/img/Formal/Tenis-1-Boss.npg.webp' %}" alt="" class="header-logo">
+          <h2>Tennis boss </h2>
+          <p>para ocaciones formales u reuniones importantes de alto compromiso </p>
+          <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+        
+        <div class="card7">
+          <img src="{% static '/img/Formal/pantalon formal recto.jpg' %}" alt="" class="header-logo">
+          <h2> pantalon bota recta </h2>
+          <p>para primeras comuniones y citas de romance es recomendado</p>
+          <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+        </div>
+    </div>
+<!-- se debe cambiar los nombres a contenedores -->
+
+
+<div class="contenedorg3">
+        
+    <div class="card8">
+      <img src="{% static '/img/Formal/zp222.webp' %}" alt="" class="header-logo">
+        <h2>zapatos formales</h2>
+        <p>marca boss de cuero pegados y cocidos con muy excelente duracion</p>
+        <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+    
+    <div class="card9">
+      <img src="{% static '/img/Formal/tnz333.jpg' %}" alt="" class="header-logo">
+        <h2>Tennis formales</h2>
+        <p>para uso de ocaciones especiales y formales</p>
+        <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+    <!-- class es con punto, cuando es id se usa # para javascrip-->
+    <div class="card10">
+      <img src="{% static '/img/Formal/pantalon cafe form44.webp' %}" alt="" class="header-logo">
+      <h2>Pantalon bota recta</h2>
+      <p>para uso de ocasiones cotidianas o formales en familia </p>
+      <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+    
+    <div class="card11">
+      <img src="{% static '/img/Formal/chaqueta formal 6.webp' %}" alt="" class="header-logo">
+      <h2>chaqueta de cuero</h2>
+      <p>Para uso casual y elegante aporta un estilo de elegancia y clase</p>
+      <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn btn-add-to-cart" data-product-name="">Agregar al carrito</a>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-logo">
+      <img class="logo" src="/Imagenes/bebe-durmiendo.png" alt="">
+    </div>
+    <ul class="footer-links">
+        <li><a href="#">inicio</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contactos</a></li>
+    </ul>
+    <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2023 Juan Gonzalez - &copy;2023 Jorge Sepulveda - &copy;2023 Carlos Camacho</p>
+  </footer>
+
+
+  
+<script src="/js/contadorCarrito.js"></script>
+    
 
 {% endblock %}
