@@ -1,1 +1,1 @@
-web: gunicorn OufitMen.wsgi --log-file -
+web: gunicorn OufitMen.wsgi
